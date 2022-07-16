@@ -57,23 +57,23 @@ const ActivityContent1 = styled.div`
   .sectionp {
     color: #979797;
     font-family: Inter, sans-serif;
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.5rem;
     @media Screen and (max-width: 1200px) {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
     @media Screen and (max-width: 768px) {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
     @media Screen and (max-width: 480px) {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
   }
   .sectionh1 {
     color: #143a5a;
     font-family: Laila, sans-serif;
-    font-size: 2.81rem;
+    font-size: 1.8rem;
     font-weight: 700;
     text-transform: titlecase;
     line-height: 3.13rem;
@@ -98,17 +98,18 @@ const Activitypage = styled.div`
     padding: 5px;
   }
   h4 {
-    font-size: 1.6rem;
+    color: #979797;
+    font-size: 0.8rem;
     font-family: Inter, sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     @media Screen and (max-width: 1200px) {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
     @media Screen and (max-width: 768px) {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
     @media Screen and (max-width: 480px) {
-      font-size: 1rem;
+      font-size: 0.7rem;
     }
   }
 `;
@@ -128,12 +129,16 @@ const ActivityContent2 = styled.div`
     height: 30vh;
     margin: 10px;
   }
+  @media Screen and (max-width: 768px) {
+    height: 20vh;
+    margin: 10px;
+  }
   div {
     width: 70%;
     padding: 60px 50px 0px 50px;
-    @media Screen and (max-width: 480px){
+    @media Screen and (max-width: 480px) {
       padding: 30px 10px 0px 10px;
-    } 
+    }
   }
   p {
     font-family: "Laila", sans-serif;

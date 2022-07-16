@@ -12,7 +12,7 @@ import Arrow from "../img/Arrow.svg";
 import Arrow1 from "../img/Arrow-1.svg";
 
 const ActivitiesContainer = styled.section`
-  margin-top: 30px;
+  margin-top: 50px;
   .Activities {
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ const ActivitiesContainer = styled.section`
   }
   h1 {
     color: #ff9f0d;
-    font-family: Laila, sans-serif;
+    font-family: Share Tech;
     font-size: 1rem;
   }
 `;

@@ -10,11 +10,15 @@ import Image3 from "../img/Be-leaders.svg";
 import Image4 from "../img/Be-trustworthy.svg";
 
 const ValueContainer = styled.section`
-  margin-top: 30px 0px;
+  margin-top: 50px;
   .Value {
     display: flex;
     justify-content: center;
     color: #ff9f0d;
+  }
+  .values1{
+    font-size: 1rem;
+    font-family: Share Tech;
   }
 `;
 const Valueh1 = styled.div`
@@ -22,7 +26,7 @@ const Valueh1 = styled.div`
   justify-content: center;
   padding: 20px 0px;
   color: #143a5a;
-  font-family: Inter, sans-serif;
+  font-family: Laila, sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 `;
@@ -79,7 +83,7 @@ const Values = () => {
     <ValueContainer>
       <div className="Value">
         <img src={Arrow1} alt="" />
-        <h1>Gallery</h1>
+        <h1 className="values1">Gallery</h1>
         <img src={Arrow} alt="" />
       </div>
       <Valueh1>Our Values</Valueh1>

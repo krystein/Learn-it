@@ -93,7 +93,7 @@ const Contacth1 = styled.div`
   padding: 5px 10px;
   display: flex;
   font-family: Laila, sans-serif;
-  font-size: 25px;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 30px;
   text-align: left;

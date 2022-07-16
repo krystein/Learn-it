@@ -37,7 +37,7 @@ const SectionContent = styled.div`
 `;
 const SectionContent1 = styled.div`
   width: 50%;
-  padding-top: 192px;
+  padding-top: 100px;
   padding-right: 60px;
   @media Screen and (max-width: 1200px) {
     width: 100%;
@@ -56,13 +56,13 @@ const SectionContent1 = styled.div`
   }
   h1 {
     color: #ff9f0d;
-    font-family: Inter, sans-serif;
+    font-family: Share Tech;
     font-size: 1rem;
   }
   .sectionp {
     color: #979797;
     font-family: Inter, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 2rem;
     @media Screen and (max-width: 1200px) {
@@ -82,7 +82,7 @@ const SectionContent1 = styled.div`
     font-weight: 700;
     text-transform: titlecase;
     line-height: 3.13rem;
-    @media Screen and (max-width: 1200px){
+    @media Screen and (max-width: 1200px) {
       font-size: 2rem;
     }
   }

@@ -15,8 +15,8 @@ const AssignmentContainer = styled.div`
   }
   .gallery {
     color: #ff9f0d;
-    font-family: Inter, sans-serif;
     font-size: 1rem;
+    font-family: Share Tech;
   }
 `;
 const Assignmenth1 = styled.div`
@@ -24,7 +24,7 @@ const Assignmenth1 = styled.div`
   justify-content: center;
   padding: 10px 0px;
   color: #143a5a;
-  font-family: Inter, sans-serif;
+  font-family: Laila, sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 `;
@@ -95,7 +95,7 @@ const Assignmentpage = styled.div`
   .ProjectGoal {
     color: #979797;
     font-family: Inter, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 2rem;
     text-align: center;
@@ -103,7 +103,7 @@ const Assignmentpage = styled.div`
   .Locations {
     color: #979797;
     font-family: Inter, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 2rem;
     text-align: center;
@@ -111,7 +111,7 @@ const Assignmentpage = styled.div`
   .FundingGoal {
     color: #979797;
     font-family: Inter, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 2rem;
     text-align: center;
@@ -119,7 +119,7 @@ const Assignmentpage = styled.div`
   .TotalFunded {
     color: #979797;
     font-family: Inter, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 2rem;
     text-align: center;
@@ -127,7 +127,7 @@ const Assignmentpage = styled.div`
   .Amt1 {
     color: #143a5a;
     font-family: Laila, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: titlecase;
     line-height: 2.93rem;
@@ -136,7 +136,7 @@ const Assignmentpage = styled.div`
   .USA {
     color: #143a5a;
     font-family: Laila, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: titlecase;
     line-height: 2.93rem;
@@ -145,7 +145,7 @@ const Assignmentpage = styled.div`
   .Amt2 {
     color: #143a5a;
     font-family: Laila, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: titlecase;
     line-height: 2.93rem;
@@ -154,7 +154,7 @@ const Assignmentpage = styled.div`
   .Amt3 {
     color: #143a5a;
     font-family: Laila, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: titlecase;
     line-height: 2.93rem;

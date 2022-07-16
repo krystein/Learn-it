@@ -21,14 +21,15 @@ const Testimonialcontent = styled.div`
   }
   h1 {
     color: #ff9f0d;
-    font-family: Inter, sans-serif;
     font-size: 1rem;
+    font-family: Share Tech;
   }
 `;
 const Testimonialh1 = styled.div`
   padding: 10px;
   display: flex;
   text-align: center;
+  justify-content: center;
   color: #143a5a;
   font-family: Laila, sans-serif;
   font-size: 1.8rem;

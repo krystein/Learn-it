@@ -25,6 +25,7 @@ const DonatePage = styled.div`
   }
   h5 {
     padding: 10px;
+    color: #143a5a;
   }
   .Donate {
     display: flex;
@@ -48,9 +49,10 @@ const Donateh1 = styled.div`
   padding: 10px;
   display: flex;
   justify-content: center;
-  font-family: Inter, sans-serif;
+  font-family: Laila, sans-serif;
   font-weight: 700;
   font-size: 1rem;
+  color: #143a5a;
 `;
 const Donatecontent = styled.div`
   .donate {
@@ -79,8 +81,7 @@ const Input = styled.div`
   input {
     width: 514px;
     height: 60px;
-    left: 703px;
-    top: 6449px;
+    padding-left: 10px;
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0px 10px 10px 10px;

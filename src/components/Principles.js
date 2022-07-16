@@ -23,7 +23,7 @@ const PrincipleContent = styled.div`
   }
   .prince {
     color: #ff9f0d;
-    font-family: Inter, sans-serif;
+    font-family: Share Tech;
     font-size: 1rem;
   }
   h1 {
@@ -59,6 +59,7 @@ const PrinciplePage = styled.div`
   grid-auto-flow: column;
   .page {
     font-family: Laila, sans-serif;
+    font-size: 1.8rem;
   }
   div {
     display: flex;
@@ -97,21 +98,24 @@ const PrincipleImg = styled.img`
 const PrincipleH = styled.div`
   color: #143a5a;
   font-family: Inter, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.46rem;
+  @media Screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;
 const Principleh2 = styled.div`
   color: #143a5a;
   font-family: Inter, sans-serif;
-  font-size: 1rem;
-  line-height: 2rem;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
   p {
     color: orange;
   }
 @media Screen and (max-width: 768px){
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 `;
 

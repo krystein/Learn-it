@@ -14,7 +14,7 @@ const LegendContainer = styled.section`
 `;
 const LegendContent = styled.div`
   padding: 50px;
-  @media Screen and (max-width: 1200px){
+  @media Screen and (max-width: 1200px) {
     padding: 5px;
   }
   .legend {
@@ -23,7 +23,7 @@ const LegendContent = styled.div`
   }
   h1 {
     color: #ff9f0d;
-    font-family: Inter, sans-serif;
+    font-family: Share Tech;
     font-size: 1rem;
   }
 `;
@@ -108,7 +108,7 @@ const LegendImg = styled.img`
 const Legendh2 = styled.div`
   color: #979797;
   font-family: Inter, sans-serif;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: 500;
   line-height: 1.5rem;
   @media Screen and (max-width: 1200px) {
