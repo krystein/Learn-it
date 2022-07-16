@@ -75,7 +75,12 @@ const ActivitiesContent1 = styled.div`
 const ActivitiesImg = styled.img`
   width: 100%;
   height: 50vh;
-
+  @media Screen and (max-width: 768px) {
+    height: 35vh;
+  }
+  @media Screen and (max-width: 480px) {
+    height: 25vh;
+  }
 `;
 const ActivitiesImgs = styled.img`
   width: 100%;
@@ -84,10 +89,10 @@ const ActivitiesImgs = styled.img`
     height: 25vh;
   }
   @media Screen and (max-width: 768px) {
-    height: 50vh;
+    height: 35vh;
   }
   @media Screen and (max-width: 480px) {
-    height: 50vh;
+    height: 25vh;
   }
 `;
 const Activitiesh1 = styled.div`
