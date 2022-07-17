@@ -100,7 +100,7 @@ const Activitiesh1 = styled.div`
   justify-content: center;
   padding: 20px 0px;
   color: #143a5a;
-  font-family: Inter, sans-serif;
+  font-family: Laila, sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
 `;
