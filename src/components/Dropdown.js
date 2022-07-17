@@ -43,7 +43,7 @@ const CloseIcon = styled(FaTimes)`
   color: #fff;
 `;
 
-const DropdownLink = styled.div`
+const DropdownLink = styled.a`
   display: flex;
   color: #fff;
   align-items: center;
@@ -84,7 +84,7 @@ const Dropdown = ({ isOpen, toggle }) => {
         <DropdownMenu>
           {menuData.map((item, index) => {
             return (
-              <DropdownLink to={item.link} key={index}>
+              <DropdownLink href={item.link} key={index}>
                 {item.title}
               </DropdownLink>
             );
