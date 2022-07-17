@@ -1,21 +1,21 @@
 import React from "react";
 
 //import components
-import styled,{css} from 'styled-components/macro';
-import { menuData } from '../data/MenuData';
-import {FaBars} from 'react-icons/fa';
-import Image from '../img/image-2.png';
-import Svg from '../img/Search.svg'
+import styled, { css } from "styled-components/macro";
+import { menuData } from "../data/MenuData";
+import { FaBars } from "react-icons/fa";
+import Image from "../img/image-2.png";
+import Svg from "../img/Search.svg";
 
 const Nav = styled.div`
-height: 60px;
-background: #fff;
-display: flex;
-justify-content: space-between;
-padding: 1rem 2rem;
-z-index: 100;
-position: fixed;
-width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
 `;
 
 const NavLink = css`
@@ -23,6 +23,8 @@ color: #143a5a;
 display: flex;
 align-items: center;
 padding: 0 1rem;
+font-size: 1rem;
+font-family: inter, sans-serif;
 height: 100%
 cursor: pointer;
 text-decoration: none;
@@ -32,12 +34,12 @@ text-decoration: none;
 `;
 
 const Logo = styled.div`
-${NavLink}
-font-style: italic;
-font-size: clamp(0.8rem,8vw,1.2em);
-img{
+  ${NavLink}
+  font-style: italic;
+  font-size: clamp(0.8rem, 8vw, 1.2rem);
+  img {
     width: 50px;
-}
+  }
 `;
 
 const MenuBar = styled(FaBars)`
@@ -93,8 +95,9 @@ const NavMenu = styled.div`
     display: none;
   }
 `;
-const NavMenuLink = styled.div`
-${NavLink}
+const NavMenuLink = styled.a`
+  cursor: pointer;
+  ${NavLink}
 `;
 
 const NavBtn = styled.div`
@@ -127,30 +130,30 @@ const NavBtn = styled.div`
   }
 `;
 
+const Navbar = ({ toggle }) => {
+  return (
+    <Nav>
+      <Logo to="/">
+        <img src={Image} alt="" />
+      </Logo>
+      <MenuBar onClick={toggle} />
+      <NavMenu>
+        {menuData.map((item, index) => {
+          return (
+            <NavMenuLink href={item.link} key={index}>
+              {item.title}
+            </NavMenuLink>
+          );
+        })}
+      </NavMenu>
+      <NavBtn>
+        <div>
+          <img src={Svg} alt="" className="img" />
+        </div>
+        <button>Join us</button>
+      </NavBtn>
+    </Nav>
+  );
+};
 
-const Navbar = ({toggle})=>{
-    return(
-        <Nav>
-            <Logo to='/'>
-                <img src={Image} alt=""/>
-            </Logo>
-            <MenuBar onClick={toggle}/>
-            <NavMenu>
-            {menuData.map((item,index)=>{
-                return(
-                <NavMenuLink to={item.link} key={index}>
-                    {item.title}
-                </NavMenuLink>
-            )})}
-            </NavMenu>
-            <NavBtn>
-                <div>
-                    <img src={Svg} alt="" className="img"/>
-                </div>
-                <button>Join us</button>
-            </NavBtn>
-        </Nav>
-    )
-}
-
-export default Navbar
+export default Navbar;

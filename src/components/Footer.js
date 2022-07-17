@@ -99,11 +99,11 @@ const Footerpage3 = styled.div`
     background-color: #ff9f0d;
     border: none;
     border-radius: 0px 10px 8px 10px;
-    height: 30px;
+    height: 40px;
     width: 100px;
     color: #fff;
-    font-family: Inter;
-    font-size: 12px;
+    font-family: share tech;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0em;
     text-align: center;

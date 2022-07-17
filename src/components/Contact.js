@@ -132,6 +132,7 @@ justify-content: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0px 10px 10px 10px;
     color: #fff;
+    font-size: 1.2rem;
   }
 }
 `;
@@ -175,6 +176,8 @@ const Input = styled.div`
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0px 10px 10px 10px;
+    font-size: 1rem;
+    font-family: share tech;
   }
 `;
 const Input1 = styled.div`
@@ -191,6 +194,8 @@ const Input1 = styled.div`
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0px 10px 10px 10px;
+    font-size: 1rem;
+    font-family: share tech;
   }
   select {
     padding: 5px 5px 5px 10px;
@@ -199,6 +204,8 @@ const Input1 = styled.div`
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0px 10px 10px 10px;
+    font-size: 1rem;
+    font-family: share tech;
   }
 `;
 const Contactbtn1 = styled.div`
@@ -223,7 +230,7 @@ const Contactbtn1 = styled.div`
 
 const Contact = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id="Contact">
       <Contactcontent>
         <div className="Contact">
           <h1 className="cont">Contact Us</h1>
@@ -266,21 +273,23 @@ const Contact = () => {
               </button>
             </Contactbtn>
           </div>
-          <Input>
-            <input type="text" placeholder="Johnathon Smith" />
-            <input type="email" placeholder="Email Address" />
-          </Input>
-          <Input1>
-            <input type="text" placeholder="Phone Number" />
-            <select>
-              <option>Location</option>
-            </select>
-          </Input1>
-          <textarea placeholder="Description"></textarea>
+          <form>
+            <Input>
+              <input type="text" placeholder="Johnathon Smith" required />
+              <input type="email" placeholder="Email Address" required />
+            </Input>
+            <Input1>
+              <input type="tel" placeholder="Phone Number" required />
+              <select required>
+                <option>Location</option>
+              </select>
+            </Input1>
+            <textarea placeholder="Description" required></textarea>
+            <Contactbtn1>
+              <button>Submit</button>
+            </Contactbtn1>
+          </form>
         </Contactcontent2>
-        <Contactbtn1>
-          <button>Submit</button>
-        </Contactbtn1>
       </Contactcontent>
       <Contactcontent1>
         <img src={Image} alt="" />

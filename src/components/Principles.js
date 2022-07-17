@@ -115,7 +115,7 @@ const Principleh2 = styled.div`
     color: orange;
   }
 @media Screen and (max-width: 768px){
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 `;
 

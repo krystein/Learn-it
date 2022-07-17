@@ -167,6 +167,8 @@ const ActivityContent2 = styled.div`
     border-radius: 0px 10px 8px 10px;
     height: 40px;
     width: 100px;
+    font-size: 1.1rem;
+    font-family: share tech;
   }
   .btn {
     width: 30%;
@@ -175,6 +177,7 @@ const ActivityContent2 = styled.div`
     justify-content: end;
     @media Screen and (max-width: 480px) {
       width: 50%;
+      padding-top: 80px;
     }
   }
 `;

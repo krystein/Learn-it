@@ -85,6 +85,8 @@ const Input = styled.div`
     background: #ffffff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0px 10px 10px 10px;
+    font-size: 1rem;
+    font-family: share tech;
     @media Screen and (max-width: 480px){
       width: 320px;
     }
@@ -121,7 +123,7 @@ const Donatebtn1 = styled.div`
 
 const Donate = () => {
   return (
-    <DonateContainer>
+    <DonateContainer id="Donate">
       <DonatePage>
         <Donateh1>Donate Today</Donateh1>
         <h5>Select Amount</h5>
@@ -138,10 +140,10 @@ const Donate = () => {
             </Donatebtn>
           </div>
           <Input>
-            <input type="text" placeholder="Other Amount" />
+            <input type="number" placeholder="Other Amount" />
           </Input>
           <Input1>
-            <input type="checkbox" />
+            <input type="checkbox"  required/>
             <label> Make This Month Donation</label>
           </Input1>
           <Donatebtn1>

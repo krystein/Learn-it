@@ -159,7 +159,7 @@ const Legendbtn = styled.div`
 
 const Legend = () => {
   return (
-    <LegendContainer>
+    <LegendContainer id="About">
       <LegendContent>
         <div className="legend">
           <img src={Arrow1} alt="" />
@@ -169,9 +169,8 @@ const Legend = () => {
         <Legendh1>Mission Statement</Legendh1>
         <Legendp>
           Our aim to increase Children literacy through reading. Giving them
-          books like bible reading activities,
-          gospel books, etc. to upsurge scripture knowledge and build
-          stronger connection with GOD.
+          books like bible reading activities, gospel books, etc. to upsurge
+          scripture knowledge and build stronger connection with GOD.
         </Legendp>
       </LegendContent>
       <LegendContent1>

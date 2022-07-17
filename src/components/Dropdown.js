@@ -9,7 +9,7 @@ const DropdownContainer = styled.div`
   position: fixed;
   z-index: 999;
   width: 100%;
-  height: 40%;
+  height: 50%;
   background: #143a5a;
   display: grid;
   align-items: center;
@@ -17,15 +17,6 @@ const DropdownContainer = styled.div`
   right: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  @media Screen and (max-width: 1200px) {
-    height: 30%;
-  }
-  @media Screen and (max-width: 768px) {
-    height: 30%;
-  }
-  @media Screen and (max-width: 480px) {
-    height: 30%;
-  }
 `;
 
 const Icon = styled.div`
@@ -46,15 +37,6 @@ const DropdownMenu = styled.div`
   grid-template-row: repeat(4, 80px);
   text-align: center;
   margin-bottom: 0.5rem;
-  @media Screen and (max-width: 1200px) {
-    grid-template-row: repeat(4, 60px);
-  }
-  @media Screen and (max-width: 768px) {
-    grid-template-row: repeat(4, 60px);
-  }
-  @media Screen and (max-width: 480px) {
-    grid-template-row: repeat(4, 60px);
-  }
 `;
 
 const CloseIcon = styled(FaTimes)`
@@ -66,14 +48,15 @@ const DropdownLink = styled.div`
   color: #fff;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-family: inter, sans-serif;
   text-decoration: none;
   text-style: none;
   cursor: pointer;
   transition: 0.2s ease-in-out;
   margin-bottom: 1rem;
   &:hover {
-    color: #000d1a;
+    color: #ff9f0d;
   }
 `;
 

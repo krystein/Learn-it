@@ -198,7 +198,7 @@ const Img = styled.img`
 
 const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="Home">
       <HeroContent>
         <Heroh1>
           Justice Begins Where<p className="equal">Inequality Ends</p>

@@ -1,4 +1,5 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 
 //components
 import Hero from "./components/Hero";
@@ -18,29 +19,31 @@ import Footer from "./components/Footer";
 import Dropdown from "./components/Dropdown";
 
 function App() {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggle = () => {
-      setIsOpen(!isOpen);
-    };
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <>
-      <GlobalStyle />
-      <Navbar toggle={toggle} />
-      <Hero />
-      <Dropdown isOpen={isOpen} toggle={toggle}/>
-      <Legend />
-      <Section />
-      <Activities />
-      <Principles />
-      <Values />
-      <Assignment />
-      <Donate />
-      <Activity />
-      <Testimonial />
-      <Contact />
-      <Footer />
-    </>
+    <Router>
+      <div style={{ scrollBehavior: "smooth" }}>
+        <GlobalStyle />
+        <Navbar toggle={toggle} />
+        <Hero />
+        <Dropdown isOpen={isOpen} toggle={toggle} />
+        <Legend />
+        <Section />
+        <Activities />
+        <Principles />
+        <Values />
+        <Assignment />
+        <Donate />
+        <Activity />
+        <Testimonial />
+        <Contact />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
